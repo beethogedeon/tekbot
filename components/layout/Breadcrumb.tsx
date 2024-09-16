@@ -11,7 +11,7 @@ export default function Breadcrumb({ breadcrumbTitle }: any) {
                                 <h3 className="title">{breadcrumbTitle} <img className="breadcrumb-shape" src="/assets/img/others/bredcrumb-shape1.png" alt="img" /></h3>
                                 <nav className="breadcrumb">
                                     <span property="itemListElement" typeof="ListItem">
-                                        <Link href="/">Home</Link>
+                                        <Link href="/">Accueil</Link>
                                     </span>
                                     <span className="breadcrumb-separator"><i className="flaticon-right-arrow-angle" /></span>
                                     <span property="itemListElement" typeof="ListItem">{breadcrumbTitle}</span>

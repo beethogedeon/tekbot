@@ -47,13 +47,20 @@
          url('../fonts/centurygothic.svg#svgFontname') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+  font-family: 'Exo 2';
+  src: url('../fonts/Exo2-VariableFont_wght.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/Exo2-VariableFont_wght.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Exo2-VariableFont_wght.svg#svgFontname') format('svg'); /* Legacy iOS */
+}
+
 .text-theme {
   color: var(--tg-theme-primary) !important;
 }
 
 :root {
-  --tg-body-font-family: 'Exo 2', sans-serif;;
-  --tg-heading-font-family: 'Century Gothic', sans-serif;;
+  --tg-body-font-family: 'Century Gothic', sans-serif;;
+  --tg-heading-font-family: 'Exo 2', sans-serif;;
   --tg-heading2-font-family: 'Exo 2', sans-serif;;
   --tg-icon-font-family: "Font Awesome 5 Free";
   --tg-body-font-size: 16px;
@@ -65,7 +72,7 @@
   --tg-color-dark-blue: #0E104B;
   --tg-color-dark-blue-2: #001950;
   --tg-color-light-blue: #7149D2;
-  --tg-color-yellow-default: #FCE300;
+  --tg-color-yellow-default:#f2c242;
   --tg-color-yellow-light: #F9EADC;
   --tg-color-white-default: #ffffff;
   --tg-color-red-default: #ED1730;
@@ -104,7 +111,7 @@ body {
   line-height: var(--tg-body-line-height);
 }
 body.theme-yellow {
-  --tg-theme-primary: #FCE300;
+  --tg-theme-primary: #f2c242;
 }
 body.theme-green {
   --tg-theme-primary: #6bc7e4;
@@ -5269,7 +5276,7 @@ textarea.is-invalid {
   max-width: 151px;
 }
 .work-wrap-header .work-wrap-text {
-  color: var(--tg-color-white-default);
+  color: var(--tg-color-dark);
   text-transform: uppercase;
   max-width: 588px;
   font-weight: 400;
@@ -5279,7 +5286,7 @@ textarea.is-invalid {
 }
 
 .work-counter-wrap {
-  color: var(--tg-color-white-default);
+  color: var(--tg-color-dark);
   letter-spacing: -0.015em;
   font-family: var(--tg-heading-font-family);
   font-size: 1.25rem;
@@ -5314,7 +5321,7 @@ textarea.is-invalid {
 }
 
 .work-wrap-details {
-  --tg-color-dark: #ffffff;
+  --tg-color-dark: var(--tg-color-dark);
   --tg-color-white-default: #000000;
 }
 .work-wrap-details .sec-text {
@@ -10288,3 +10295,8 @@ blockquote p::first-letter {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.yellow-bg{
+  background-color: var(--tg-color-yellow-default);
+  color: var(--tg-color-dark);
+}

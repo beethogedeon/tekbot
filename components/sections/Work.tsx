@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Work() {
     return (
         <>
-            <section className="work-area pt-120 pb-120 dark-bg">
+            <section className="work-area pt-120 pb-120 yellow-bg">
                 <div className="container">
                     <div className="work-wrap-header">
                         <div className="work-thumb-wrap">

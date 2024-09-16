@@ -37,13 +37,13 @@ export default function MobileMenu() {
                 <li className="menu-item-has-children"><Link href="/about">A Propos</Link>
                     <div className={isActive.key == 2 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleClick(2)}><span className="plus-line" /></div>
                 </li>
-                <li className="menu-item-has-children"><Link href="/">PORTFOLIO</Link>
+                <li className="menu-item-has-children"><Link href="/">Portfolio</Link>
                     <div className={isActive.key == 3 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleClick(3)}><span className="plus-line" /></div>
                 </li>
-                <li className="menu-item-has-children"><Link href="/#">BLOG</Link>
+                <li className="menu-item-has-children"><Link href="/#">Blog</Link>
                     <div className={isActive.key == 4 ? "dropdown-btn open" : "dropdown-btn"} onClick={() => handleClick(4)}><span className="plus-line" /></div>
                 </li>
-                <li className={pathname == "/contact" ? "active" : ""}><Link href="/contact">CONTACT</Link></li>
+                <li className={pathname == "/contact" ? "active" : ""}><Link href="/contact">Contact</Link></li>
             </ul>
         </>
     )
